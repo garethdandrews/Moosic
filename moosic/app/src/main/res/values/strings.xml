@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">moosic</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="artwork">Artwork</string>
+    <string name="repeat">Repeat</string>
+    <string name="skip_previous">Skip Previous</string>
+    <string name="skip_forward">Skip Forward</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="view_queue">View Queue</string>
+    <string name="up_next"> up next!</string>
+    <string name="no_song_playing">There is nothing playing!</string>
+</resources>

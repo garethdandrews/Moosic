@@ -1,0 +1,4 @@
+#Thu Dec 07 19:38:52 GMT 2017
+base.0=D\:\\Documents\\moosic\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
+renamed.0=classes.dex
+file.0=D\:\\Documents\\moosic\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25\\classes.dex

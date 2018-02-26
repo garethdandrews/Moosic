@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <ImageView
+        android:id="@+id/artwork"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/my_toolbar"
+        android:contentDescription="@string/artwork"
+        tools:ignore="UnknownIdInLayout" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/artwork"
+        android:layout_alignStart="@+id/artwork"
+        android:layout_below="@+id/artwork" />
+
+    <TextView
+        android:id="@+id/text_songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/text_songArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_songTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/text_songAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_songArtist"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/control_bar_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_songAlbum"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/text_currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artwork"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/seekBar"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/text_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artwork"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/seekBar"
+        android:textColor="@color/textColorPrimary" />
+
+</RelativeLayout>
